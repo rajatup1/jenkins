@@ -5,7 +5,7 @@ pipeline {
   }
   }
   stages {
-  stage(‘Test-Nodes') {
+  stage('Test-Nodes') {
    environment {
     API_KEY = 'ISCP12345'
     }
