@@ -1,0 +1,18 @@
+pipeline{
+ agent any
+ stages {
+    stage('Build'){
+    steps{
+      sh'ls'
+      }
+   }
+   stage('Deploy'){
+   steps{
+   checkout scm
+   sh "ls"
+   sh "pwd"
+   print "hello world"
+   }
+   }
+   }
+   }
